@@ -2,15 +2,12 @@
 
 
 :root {
-    --bronze: #c9a227;
-    --bronze-dark: #8b7019;
-    --copper: #b87333;
-    --iron-dark: #1a1a1a;
-    --iron-mid: #252525;
-    --iron-light: #333333;
-    --steel: #4a4a4a;
+    --bronce: #c9a227;
+    --cobre: #b87333;
+    --hierro-oscuro: #1a1a1a;
+    --hierro: #333333;
+    --metal: #4a4a4a;
     --steam: #f5f5dc;
-    --steam-dim: #a8a88a;
 }
 
 
@@ -22,8 +19,8 @@
 
 body {
     font-family: 'Rajdhani', sans-serif;
-    background-color: var(--iron-dark);
-    color: var(--steam-dim);
+    background-color: var(--hierro-oscuro);
+    color: var(--steam);
     min-height: 100vh;
     line-height: 1.6;
 }
@@ -39,13 +36,13 @@ body {
 h1 {
     font-family: 'Cinzel', serif;
     font-size: 1.8rem;
-    color: var(--bronze);
+    color: var(--bronce);
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
-    border-bottom: 2px solid var(--bronze-dark);
+    border-bottom: 2px solid var(--bronce);
 }
 
 
@@ -55,8 +52,8 @@ h1 {
     gap: 0.5rem;
     margin-bottom: 2rem;
     padding: 1rem;
-    background: var(--iron-mid);
-    border: 1px solid var(--steel);
+    background: var(--hierro);
+    border: 1px solid var(--metal);
 }
 
 
@@ -66,17 +63,17 @@ h1 {
     font-family: 'Rajdhani', sans-serif;
     font-size: 1rem;
     color: var(--steam);
-    background: var(--iron-dark);
-    border: 1px solid var(--steel);
+    background: var(--hierro-oscuro);
+    border: 1px solid var(--metal);
     outline: none;
 }
 
 #input-tarea::placeholder {
-    color: var(--steel);
+    color: var(--metal);
 }
 
 #input-tarea:focus {
-    border-color: var(--bronze-dark);
+    border-color: var(--bronce);
 }
 
 
@@ -93,24 +90,24 @@ button {
 }
 
 button[type="submit"] {
-    background: var(--bronze);
-    color: var(--iron-dark);
+    background: var(--bronce);
+    color: var(--hierro-oscuro);
 }
 
 button[type="submit"]:hover {
-    background: var(--copper);
+    background: var(--cobre);
 }
 
 #boton-borrar,
 #boton-borrar-todo {
-    background: var(--iron-light);
-    color: var(--steam-dim);
-    border: 1px solid var(--steel);
+    background: var(--hierro);
+    color: var(--steam);
+    border: 1px solid var(--metal);
 }
 
 #boton-borrar:hover,
 #boton-borrar-todo:hover {
-    background: var(--steel);
+    background: var(--metal);
     color: var(--steam);
 }
 
@@ -124,11 +121,11 @@ button[type="submit"]:hover {
 
 #lista-tareas li {
     padding: 1rem;
-    background: var(--iron-mid);
-    border-left: 3px solid var(--bronze-dark);
+    background: var(--hierro);
+    border-left: 3px solid var(--bronce);
     color: var(--steam);
 }
 
 #lista-tareas li:hover {
-    border-left-color: var(--bronze);
+    border-left-color: var(--bronce);
 }
